@@ -9,12 +9,21 @@
     <script type="text/jsx">
       const app = document.getElementById("app");
 
-      const Header = () => {
-        return (<h1>Develop. Preview. Ship. 🚀</h1>);
+      const Header = ({title}) => {
+        return (<h1>{title || "Develop. Preview. Ship. 🚀" }</h1>);
       }
 
       const HomePage = () => {
-        return <div><Header /></div>;
+        const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+        const listElements = names.map(name => <li key={name}>{name}</li>);
+
+        return (<div>
+            <Header />
+            <Header title="React 💙" />
+            <ul>
+                {listElements}
+            </ul>
+        </div>);
       }
       ReactDOM.render(<HomePage />, app);
     </script>
