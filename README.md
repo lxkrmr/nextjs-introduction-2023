@@ -9,6 +9,12 @@ It will contain commits following the path:
 
 # Tricks & Tipps
 
+## Run te app in dev mode
+
+```properties
+npm run dev
+```
+
 ## [Simple Http Server](https://www.npmjs.com/package/http-server)
 
 In the project directory run:
