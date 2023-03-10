@@ -9,7 +9,7 @@ It will contain commits following the path:
 
 # Tricks & Tipps
 
-## Run te app in dev mode
+## Run the app in dev mode
 
 ```properties
 npm run dev
